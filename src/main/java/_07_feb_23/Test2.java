@@ -27,6 +27,7 @@ public class Test2 {
                 min2 = arr[i];
             }
         }
-        System.out.println(min + ", " + min2);
+        System.out.println("Min 1 : " + min);
+        System.out.println("Min 2 : " + min2);
     }
 }
