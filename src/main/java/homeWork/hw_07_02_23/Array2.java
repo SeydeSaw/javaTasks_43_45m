@@ -10,15 +10,15 @@ package homeWork.hw_07_02_23;
     нужные для затравки — ноль и единица: F 0 = 0 , F 1 = 1 ."
  */
 
+import java.util.Arrays;
+
 public class Array2 {
 
     public static void main(String[] args){
     //объявляем массив:
-    int[] array = new int[20];
+    int[] array = new int[10];
     //обращаемся к методу и передаём массив:
     fillFibonacci(array);
-    //обращаемся к методу и передаём массив:
-    printArray(array);
     }
     public static void fillFibonacci(int[] array){
         // первые два элемента массива соответствуют начальным значениям
@@ -32,12 +32,7 @@ public class Array2 {
             // F n =    F n − 1   +  F n − 2:
             array[i] = array[i-1] + array[i-2];
         }
-    }
-    public static void printArray(int[] array) {
-        // Цикл, начиная с нулевого элемента, до последнего:
-        for (int i = 0; i < array.length; i++) {
-            // Вывести на экран элементы массива:
-            System.out.print(array[i] + " ");
-        }
+        //Вывести массив на экран:
+        System.out.println(Arrays.toString(array));
     }
 }
