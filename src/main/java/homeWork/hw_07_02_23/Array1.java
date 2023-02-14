@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class Array1 {
 
     public static void main(String[] args) {
-        int[]arr = {2,44,3,4,7,9,66,};
+        int[]arr = {2,44,3,4,7,9,66};
         findElements(arr);
     }
     public static void findElements(int[] arr) {
