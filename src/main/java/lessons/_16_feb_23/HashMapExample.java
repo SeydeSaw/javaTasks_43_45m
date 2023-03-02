@@ -1,4 +1,4 @@
-package _16_feb_23;
+package lessons._16_feb_23;
 
 import java.util.HashMap;
 import java.util.Map;

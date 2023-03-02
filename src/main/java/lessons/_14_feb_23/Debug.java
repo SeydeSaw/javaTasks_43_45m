@@ -1,4 +1,4 @@
-package _14_feb_23;
+package lessons._14_feb_23;
 
 public class Debug {
     public static int getNumber(int[] a, int n){

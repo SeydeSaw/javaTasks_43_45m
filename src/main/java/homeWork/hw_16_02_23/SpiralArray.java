@@ -19,20 +19,21 @@ public class SpiralArray {
         // Создаем двумерный массив
         int[][] array = new int[N][H];
         // Создаем три переменные для подсчета.
-        int top = 0, bottom = N - 1, left = 0, right = H - 1;
+        int top = 0, bottom = N -1 , left = 0, right = H -1;
         int count = 1;
         // Запускаем цикл, пока переменные top и left не станут равными правой и нижней границе массива
         while (top <= bottom && left <= right) {
             // Заполняем верхнюю строку массива числами от 1 до W
             for (int i = left; i <= right; i++) {
-                array[top][i] = count++;
+                //запись в массив array значения count и последующее увеличение значения count на 1
+                array[top][i] = count++;//элемент массива, находящийся на верхней границе и имеющий номер строки top и номер столбца i;
             }
-            top++;
+            top++;//увеличивает переменную top на 1
             // Заполняем правую колонку массива числами от 1 до W
             for (int i = top; i <= bottom; i++) {
-                array[i][right] = count++;
+                array[i][right] = count++;//элемент массива, находящийся на правой границе и имеющий номер строки i и номер столбца right
             }
-            right--;
+            right--;//уменьшает переменную right на 1
             // Заполняем нижнюю строку массива числами от 1 до W в обратном направлении
             for (int i = right; i >= left; i--) {
                 array[bottom][i] = count++;

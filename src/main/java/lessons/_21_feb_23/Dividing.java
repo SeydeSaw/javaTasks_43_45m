@@ -1,4 +1,4 @@
-package _21_feb_23;
+package lessons._21_feb_23;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package _07_feb_23;
+package lessons._07_feb_23;
 
 /*Todo
     Есть массив интов, надо вывести на экран
