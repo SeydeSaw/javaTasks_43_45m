@@ -29,7 +29,7 @@ public class ArrListRandStr {
         // генерируем стрингу рандомно длинной 5 символов
         String randomString = "";
         for (int i = 0; i < 5; i++) {
-            randomString += (char) (random.nextInt(26) + 'a');//пояснение функции ниже
+            randomString += (char) (random.nextInt(26) + 'a');
         }
         // добавляем стрингу в лист
         list.add(randomString);
