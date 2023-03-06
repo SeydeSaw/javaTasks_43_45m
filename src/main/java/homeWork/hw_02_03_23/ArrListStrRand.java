@@ -7,14 +7,12 @@ import java.util.Random;
 
 public class ArrListStrRand {
     // private static ArrayList<Character> list = new ArrayList<>();
-
     public static void main(String[] args) {
         String str = generateRandomString();
         System.out.println(str);
         char x = 'a';
         findSymbolFromEnd(str, x);
     }
-
     public static String generateRandomString() {
         Random random = new Random();
         // генерируем стрингу рандомно длинной 5 символов
@@ -24,7 +22,6 @@ public class ArrListStrRand {
         }
         return randomString;
     }
-
     public static void findSymbolFromEnd(String s, char x) {
         List<Character> list = new ArrayList<>();
         for (char c : s.toCharArray()) {
