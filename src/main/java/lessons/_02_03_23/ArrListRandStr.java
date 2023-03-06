@@ -1,4 +1,4 @@
-package homeWork.hw_02_03_23;
+package lessons._02_03_23;
 /* todo Task1
     Написать класс который содержит ArrayList и методы:
     -заполняют лист рандомными цифрами
@@ -10,6 +10,8 @@ package homeWork.hw_02_03_23;
         выводит тот символ который нужен если он есть,
         если нет то выдает сообщение
  */
+import homeWork.hw_02_03_23.ArrListStrRand;
+
 import java.util.ArrayList;
 import java.util.ListIterator;
 import java.util.Random;
@@ -17,11 +19,11 @@ import java.util.Random;
 public class ArrListRandStr {
     public static void main(String[] args) {
         // создание нового объекта класса ArrListRandStr и присваивание его переменной stringList
-        ArrListRandStr stringList = new ArrListRandStr();
+        ArrListStrRand stringList = new ArrListStrRand();
         // вызов метода generateRandomString() для объекта stringList
         stringList.generateRandomString();
         // вызов метода findSymbolFromEnd() для объекта stringList
-        stringList.findSymbolFromEnd();
+        //stringList.findSymbolFromEnd();
     }
     ArrayList<String> list = new ArrayList<>();
     public void generateRandomString() {
@@ -29,7 +31,7 @@ public class ArrListRandStr {
         // генерируем стрингу рандомно длинной 5 символов
         String randomString = "";
         for (int i = 0; i < 5; i++) {
-            randomString += (char) (random.nextInt(26) + 'a');//пояснение функции ниже
+            randomString += (char) (random.nextInt(26) + 'a');
         }
         // добавляем стрингу в лист
         list.add(randomString);
