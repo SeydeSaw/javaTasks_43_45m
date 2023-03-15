@@ -27,6 +27,7 @@ public class ArrListStrRand {
         for (char c : s.toCharArray()) {
             list.add(c);
         }
+        //создается объект итератора для перебора элементов
         ListIterator<Character> listIterator = list.listIterator(list.size());
         while (listIterator.hasPrevious()){
             char elementString = listIterator.previous();
