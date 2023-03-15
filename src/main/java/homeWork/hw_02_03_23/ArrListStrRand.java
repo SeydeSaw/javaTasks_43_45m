@@ -1,5 +1,11 @@
 package homeWork.hw_02_03_23;
-
+/*todo Task1
+    Написать класс который содержит ArrayList и методы:
+    -генерируют рандомную стрингу длиной 5
+    -перебирает итератором эту стрингу с конца и
+        выводит тот символ который нужен если он есть,
+        если нет то выдает сообщение
+ */
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
