@@ -24,6 +24,7 @@ public class PersonDemo {
         persons.add(p7);
 
         System.out.println(persons);
+
         System.out.println(" ");
         System.out.println("HachCode person1 = " + p1.hashCode());
         System.out.println("HachCode person2 = " + p2.hashCode());

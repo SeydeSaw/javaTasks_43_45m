@@ -1,16 +1,11 @@
 package lessons._16_mar_23;
-
 import java.util.Objects;
-
 /*todo
-    Деалем класс с 5 полями разного типа
-    имплементим от компарабле
-    делаем compareTo по 3 полям
-    переопределяем equals and hashcode
+    Деалем класс с 5 полями разного типа имплементим от компарабле
+    делаем compareTo по 3 полям переопределяем equals and hashcode
     для оставшихся двух полей делаем компаратор
  */
 public class Person implements  Comparable<Person>{
-
     private String name;
     private String surname;
     private String sex;
@@ -62,7 +57,6 @@ public class Person implements  Comparable<Person>{
             return person.salary - this.salary;
         }
     }
-
     @Override
     public boolean equals(Object o) {//идентичность
         if (this == o) return true;
@@ -71,12 +65,10 @@ public class Person implements  Comparable<Person>{
         //сравниваем по тем же трём параметрам, что в compareTo
         return salary == person.salary && Objects.equals(name, person.name) && Objects.equals(surname, person.surname) ;
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(name, surname, salary);
     }
-
     @Override
     public String toString() {
         return "Person{" +
